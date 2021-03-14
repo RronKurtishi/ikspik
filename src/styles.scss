@@ -24,21 +24,37 @@ body {
 
 app-square {
   button {
-    height: 12rem;
-    width: 12rem;
-    font-size: 10rem;
+    white-space: nowrap;
+    width: calc(33% - 0.4rem);
+    max-width: 12rem;
+    height: 30vw;
+    max-height: 12rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.7rem;
+    font-size: 8rem;
     border: none;
     color: #FFF;
     background: #333;
     cursor: pointer;
-    transition: 0.3s ease-in;
+    transition: color 0.2s ease-in;
     border-radius: 0;
+    padding: 1vh;
+    vertical-align: middle !important;
 
     &:focus,
     &:active {
       outline: none;
       background: #333;
       color: #DE8F6E;
+    }
+  }
+
+  &:nth-of-type(3),
+  &:nth-of-type(6),
+  &:nth-of-type(9) {
+
+    button {
+      margin-right: 0 !important;
     }
   }
 }
@@ -49,4 +65,12 @@ app-square {
 
 .o {
   color: #DBD56E;
+}
+
+@media screen and (max-width: 767px) {
+  app-square {
+    button {
+      font-size: 5.5rem;
+    }
+  }
 }

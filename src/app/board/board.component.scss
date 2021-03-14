@@ -1,18 +1,14 @@
 main {
-  display: grid;
-  grid-template-columns: 12rem 12rem 12rem;
-  grid-gap: 0.7rem;
-  width: 37.4rem;
+  width: calc(100% - 1.4rem);
+  max-width: 37.4rem;
   background: #084C61;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding: 0.7rem 0.7rem 0 0.7rem;
 }
 
 .top-content {
-  width: 37rem;
+  width: 100vw;
+  max-width: 37.4rem;
   padding-bottom: 2.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 app-square {
@@ -21,4 +17,8 @@ app-square {
 
 .text-center {
   text-align: center;
+}
+
+.mx-auto {
+  margin: 0 auto;
 }
