@@ -1,0 +1,24 @@
+main {
+  display: grid;
+  grid-template-columns: 12rem 12rem 12rem;
+  grid-gap: 0.7rem;
+  width: 37.4rem;
+  background: #084C61;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.top-content {
+  width: 37rem;
+  padding-bottom: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+app-square {
+  height: 12rem;
+}
+
+.text-center {
+  text-align: center;
+}
