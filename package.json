@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "version":  "echo $npm_package_version",
+    "release": "git add . && VERSION=$(npm run version --silent) && git push origin release/v$VERSION && git tag v$VERSION && git push origin v$VERSION && git checkout main && git pull --rebase && git rebase release/v$VERSION && git push origin main && git checkout dev && git pull --rebase && git rebase release/v$VERSION && git push origin dev"
+    
   },
   "private": true,
   "dependencies": {
