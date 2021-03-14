@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ikspik": {
+      "hosting": {
+        "ikspik": [
+          "ikspik"
+        ]
+      }
+    }
+  }
+}

@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "version":  "echo $npm_package_version",
+    "version": "echo $npm_package_version",
     "release": "git add . && VERSION=$(npm run version --silent) && git push origin release/v$VERSION && git tag v$VERSION && git push origin v$VERSION && git checkout main && git pull --rebase && git rebase release/v$VERSION && git push origin main && git checkout dev && git pull --rebase && git rebase release/v$VERSION && git push origin dev"
   },
   "private": true,
@@ -17,6 +17,7 @@
     "@angular/common": "~10.2.0",
     "@angular/compiler": "~10.2.0",
     "@angular/core": "~10.2.0",
+    "@angular/fire": "^6.1.4",
     "@angular/forms": "~10.2.0",
     "@angular/platform-browser": "~10.2.0",
     "@angular/platform-browser-dynamic": "~10.2.0",
@@ -25,7 +26,8 @@
     "@angular/service-worker": "~10.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "firebase": "^7.0 || ^8.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1002.0",
@@ -45,6 +47,12 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
+    "typescript": "~4.0.2",
+    "@angular-devkit/architect": ">= 0.900 < 0.1200",
+    "firebase-tools": "^8.0.0",
+    "fuzzy": "^0.1.3",
+    "inquirer": "^6.2.2",
+    "inquirer-autocomplete-prompt": "^1.0.1",
+    "open": "^7.0.3"
   }
 }

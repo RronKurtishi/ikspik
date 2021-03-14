@@ -125,6 +125,10 @@
               "devServerTarget": "ikspik:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
